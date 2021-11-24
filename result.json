@@ -2,496 +2,428 @@
     "unstructured": [
         {
             "data": {
-                "ProcedureInd": [
+                "MedicationInd": [
                     {
-                        "begin": 61,
-                        "coveredText": "chemotherapy",
-                        "cui": "C3665472",
+                        "administration": [
+                            {
+                                "begin": 46,
+                                "coveredText": "800mg",
+                                "dosageValue": "800mg",
+                                "end": 51,
+                                "type": "aci.SubstanceAdministration"
+                            }
+                        ],
+                        "begin": 36,
+                        "coveredText": "Ibuprofen 800mg",
+                        "cui": "C0020740",
                         "disambiguationData": {
+                            "comment": "marked VALID by clinical insight models.",
                             "validity": "VALID"
                         },
-                        "end": 73,
+                        "drug": [
+                            {
+                                "begin": 36,
+                                "complex": "false",
+                                "coveredText": "Ibuprofen",
+                                "cui": "C0020740",
+                                "end": 45,
+                                "name1": [
+                                    {
+                                        "begin": 36,
+                                        "coveredText": "Ibuprofen",
+                                        "cui": "C0020740",
+                                        "drugNormalizedName": "ibuprofen",
+                                        "drugSurfaceForm": "Ibuprofen",
+                                        "end": 45,
+                                        "rxNormID": "5640",
+                                        "type": "aci.DrugName"
+                                    }
+                                ],
+                                "type": "aci.Ind_Drug"
+                            }
+                        ],
+                        "end": 51,
                         "insightModelData": {
-                            "procedure": {
-                                "task": {
-                                    "clinicalAssessmentScore": 0.0,
-                                    "diagnosticScore": 0.0,
-                                    "labTestScore": 0.0,
-                                    "surgicalTaskScore": 0.0,
-                                    "therapeuticScore": 1.0
+                            "medication": {
+                                "adverseEvent": {
+                                    "allergyScore": 0.0,
+                                    "score": 0.001,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.001
+                                    }
                                 },
-                                "type": {
-                                    "conditionManagementScore": 0.002,
-                                    "deviceScore": 0.0,
-                                    "materialScore": 0.0,
-                                    "medicationScore": 0.997,
-                                    "procedureScore": 0.001
+                                "doseChangedEvent": {
+                                    "score": 0.0,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.0
+                                    }
+                                },
+                                "startedEvent": {
+                                    "score": 0.001,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.001
+                                    }
+                                },
+                                "stoppedEvent": {
+                                    "score": 0.0,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.0
+                                    }
                                 },
                                 "usage": {
-                                    "discussedScore": 0.998,
-                                    "explicitScore": 0.001,
-                                    "pendingScore": 0.001
+                                    "consideringScore": 0.0,
+                                    "discussedScore": 0.0,
+                                    "labMeasurementScore": 0.0,
+                                    "takenScore": 1.0
                                 }
                             }
                         },
                         "negated": false,
-                        "procedureNormalizedName": "chemotherapy",
-                        "procedureSurfaceForm": "chemotherapy",
-                        "snomedConceptId": "367336001",
-                        "type": "aci.ProcedureInd"
+                        "type": "aci.MedicationInd",
+                        "uid": 7
                     }
                 ],
                 "SymptomDiseaseInd": [
                     {
-                        "begin": 12,
-                        "ccsCode": "19",
-                        "coveredText": "lung cancer",
-                        "cui": "C1306460",
+                        "begin": 20,
+                        "ccsCode": "205",
+                        "coveredText": "back pain",
+                        "cui": "C0004604",
+                        "disambiguationData": {
+                            "comment": "Clinical Insights: This concept was shorter than an overlapping concept.",
+                            "validity": "INVALID"
+                        },
+                        "end": 29,
+                        "icd10Code": "M54.99,M54.9",
+                        "icd9Code": "724.5",
+                        "modality": "positive",
+                        "modifiers": [
+                            {
+                                "begin": 13,
+                                "coveredText": "severe",
+                                "end": 19,
+                                "type": "aci.ModifierGroupInd"
+                            }
+                        ],
+                        "negated": false,
+                        "snomedConceptId": "161891005",
+                        "symptomDiseaseNormalizedName": "backache",
+                        "symptomDiseaseSurfaceForm": "back pain",
+                        "type": "aci.SymptomDiseaseInd"
+                    },
+                    {
+                        "begin": 97,
+                        "coveredText": "tuberculosis",
+                        "cui": "C0041296",
                         "disambiguationData": {
                             "validity": "VALID"
                         },
-                        "end": 23,
-                        "hccCode": "9",
-                        "icd10Code": "C34.90,C34.9",
-                        "icd9Code": "162.9",
+                        "end": 109,
+                        "icd10Code": "A16.9",
+                        "icd9Code": "011.90",
                         "insightModelData": {
                             "diagnosis": {
-                                "familyHistoryScore": 0.0,
-                                "suspectedScore": 0.054,
-                                "symptomScore": 0.001,
+                                "familyHistoryScore": 0.847,
+                                "suspectedScore": 0.845,
+                                "symptomScore": 0.0,
                                 "traumaScore": 0.0,
                                 "usage": {
-                                    "discussedScore": 0.031,
-                                    "explicitScore": 0.963,
-                                    "patientReportedScore": 0.006
+                                    "discussedScore": 0.997,
+                                    "explicitScore": 0.003,
+                                    "patientReportedScore": 0.0
                                 }
                             }
                         },
-                        "modality": "positive",
+                        "modality": "potential",
                         "negated": false,
-                        "snomedConceptId": "93880001",
-                        "symptomDiseaseNormalizedName": "primary malignant neoplasm of lung",
-                        "symptomDiseaseSurfaceForm": "lung cancer",
-                        "type": "aci.SymptomDiseaseInd",
-                        "uid": 7
+                        "snomedConceptId": "56717001",
+                        "symptomDiseaseNormalizedName": "tuberculosis",
+                        "symptomDiseaseSurfaceForm": "tuberculosis",
+                        "type": "aci.SymptomDiseaseInd"
                     }
                 ],
                 "attributeValues": [
                     {
-                        "begin": 12,
-                        "ccsCode": "19",
+                        "begin": 13,
                         "concept": {
-                            "uid": 7
+                            "uid": 8
                         },
-                        "coveredText": "lung cancer",
+                        "coveredText": "severe back pain",
                         "disambiguationData": {
+                            "comment": "marked VALID by clinical insight models.",
                             "validity": "VALID"
                         },
-                        "end": 23,
-                        "hccCode": "9",
-                        "icd10Code": "C34.90,C34.9",
-                        "icd9Code": "162.9",
+                        "end": 29,
                         "insightModelData": {
                             "diagnosis": {
                                 "familyHistoryScore": 0.0,
-                                "suspectedScore": 0.054,
-                                "symptomScore": 0.001,
+                                "suspectedScore": 0.001,
+                                "symptomScore": 0.744,
                                 "traumaScore": 0.0,
                                 "usage": {
-                                    "discussedScore": 0.031,
-                                    "explicitScore": 0.963,
-                                    "patientReportedScore": 0.006
+                                    "discussedScore": 0.0,
+                                    "explicitScore": 1.0,
+                                    "patientReportedScore": 0.0
                                 }
                             }
                         },
                         "name": "Diagnosis",
                         "negated": false,
-                        "preferredName": "primary malignant neoplasm of lung",
-                        "snomedConceptId": "93880001",
+                        "preferredName": "severe back pain",
                         "source": "Clinical Insights - Attributes",
                         "sourceVersion": "v1.0",
                         "values": [
                             {
-                                "value": "primary malignant neoplasm of lung"
+                                "value": "severe back pain"
                             }
                         ]
                     },
                     {
-                        "begin": 37,
+                        "begin": 36,
                         "concept": {
-                            "uid": 6
+                            "uid": 7
                         },
-                        "coveredText": "smoke",
+                        "coveredText": "Ibuprofen 800mg",
                         "disambiguationData": {
                             "comment": "marked VALID by clinical insight models.",
                             "validity": "VALID"
                         },
-                        "end": 42,
+                        "end": 51,
                         "insightModelData": {
-                            "tobacco": {
-                                "exposureScore": 0.006,
-                                "nonPatientScore": 0.0,
-                                "treatmentScore": 0.0,
-                                "usage": {
-                                    "discussedScore": 0.014,
-                                    "noneScore": 0.968,
-                                    "useScore": 0.018
+                            "medication": {
+                                "adverseEvent": {
+                                    "allergyScore": 0.0,
+                                    "score": 0.001,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.001
+                                    }
                                 },
-                                "useStatus": {
-                                    "currentScore": 0.0,
-                                    "neverScore": 0.107,
-                                    "stoppedScore": 0.001
+                                "doseChangedEvent": {
+                                    "score": 0.0,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.0
+                                    }
+                                },
+                                "startedEvent": {
+                                    "score": 0.001,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.001
+                                    }
+                                },
+                                "stoppedEvent": {
+                                    "score": 0.0,
+                                    "usage": {
+                                        "consideringScore": 0.0,
+                                        "discussedScore": 0.0,
+                                        "explicitScore": 0.0
+                                    }
+                                },
+                                "usage": {
+                                    "consideringScore": 0.0,
+                                    "discussedScore": 0.0,
+                                    "labMeasurementScore": 0.0,
+                                    "takenScore": 1.0
                                 }
                             }
                         },
-                        "loincId": "LA8928-9",
-                        "meshId": "M0019985",
-                        "name": "NoTobaccoUse",
-                        "nciCode": "C154329",
-                        "negated": true,
-                        "preferredName": "Smoking",
-                        "source": "Substance Use Insight Attributes",
+                        "name": "PrescribedMedication",
+                        "negated": false,
+                        "preferredName": "ibuprofen",
+                        "rxNormId": "5640",
+                        "source": "Clinical Insights - Attributes",
                         "sourceVersion": "v1.0",
                         "values": [
                             {
-                                "value": "none"
+                                "value": "800mg"
                             }
                         ]
                     }
                 ],
+                "conceptValues": [
+                    {
+                        "begin": 36,
+                        "coveredText": "Ibuprofen 800mg",
+                        "cui": "C0020740",
+                        "dimension": "mass",
+                        "end": 51,
+                        "negated": false,
+                        "preferredName": "ibuprofen",
+                        "trigger": "equal to",
+                        "type": "ConceptValue",
+                        "unit": "mg",
+                        "value": "800"
+                    }
+                ],
                 "concepts": [
                     {
-                        "begin": 12,
-                        "coveredText": "lung cancer",
-                        "cui": "C1306460",
+                        "begin": 13,
+                        "coveredText": "severe back pain",
+                        "cui": "C0238740",
                         "disambiguationData": {
                             "validity": "NO_DECISION"
                         },
-                        "end": 23,
-                        "icd10Code": "C34.9,C34.90",
-                        "icd9Code": "162.9",
+                        "end": 29,
                         "insightModelData": {
                             "diagnosis": {
                                 "familyHistoryScore": 0.0,
-                                "suspectedScore": 0.054,
-                                "symptomScore": 0.001,
+                                "suspectedScore": 0.001,
+                                "symptomScore": 0.744,
                                 "traumaScore": 0.0,
                                 "usage": {
-                                    "discussedScore": 0.031,
-                                    "explicitScore": 0.963,
-                                    "patientReportedScore": 0.006
+                                    "discussedScore": 0.0,
+                                    "explicitScore": 1.0,
+                                    "patientReportedScore": 0.0
                                 }
                             }
                         },
                         "negated": false,
-                        "preferredName": "Primary malignant neoplasm of lung",
-                        "semanticType": "neop",
-                        "snomedConceptId": "93880001",
+                        "preferredName": "severe back pain",
+                        "semanticType": "sosy",
                         "source": "umls",
                         "sourceVersion": "2020AA",
-                        "type": "umls.NeoplasticProcess",
+                        "type": "umls.SignOrSymptom",
                         "uid": 4,
-                        "vocabs": "MTH,SNOMEDCT_US"
+                        "vocabs": "CHV,DXP"
                     },
                     {
-                        "begin": 12,
-                        "coveredText": "lung cancer",
-                        "cui": "C0684249",
+                        "begin": 36,
+                        "coveredText": "Ibuprofen",
+                        "cui": "C0020740",
                         "disambiguationData": {
                             "validity": "NO_DECISION"
                         },
-                        "end": 23,
-                        "nciCode": "C4878",
+                        "end": 45,
+                        "loincId": "LA14347-1,MTHU004262,LP16165-0",
+                        "meshId": "M0010965",
+                        "nciCode": "C561",
                         "negated": false,
-                        "preferredName": "Carcinoma of lung",
-                        "semanticType": "neop",
+                        "preferredName": "ibuprofen",
+                        "rxNormId": "5640",
+                        "semanticType": "orch",
+                        "snomedConceptId": "387207008,38268001",
                         "source": "umls",
                         "sourceVersion": "2020AA",
-                        "type": "umls.NeoplasticProcess",
-                        "vocabs": "MTH,CHV,NCI_CTRP,CST,NCI,OMIM,COSTAR,NCI_CTEP-SDC,PDQ,NCI_NCI-GLOSS,NCI_CPTAC"
+                        "type": "umls.OrganicChemical",
+                        "uid": 5,
+                        "vocabs": "MTH,LNC,CSP,MSH,MTHSPL,RXNORM,NCI_DCP,NCI_NCI-GLOSS,CHV,ATC,USP,NCI_CTRP,NCI_FDA,LCH_NW,NCI,AOD,USPMG,SNOMEDCT_US,PDQ,DRUGBANK,NCI_DTP,VANDF"
                     },
                     {
-                        "begin": 12,
-                        "coveredText": "lung cancer",
-                        "cui": "C0242379",
+                        "begin": 36,
+                        "coveredText": "Ibuprofen",
+                        "cui": "C0020740",
                         "disambiguationData": {
-                            "validity": "NO_DECISION"
+                            "comment": "Clinical Insights: This concept was shorter than an overlapping concept.",
+                            "validity": "INVALID"
                         },
-                        "end": 23,
-                        "icd10Code": "C34.9,C34.90",
-                        "icd9Code": "162.9,162.8",
-                        "loincId": "LA15687-9",
-                        "meshId": "M0012750",
-                        "nciCode": "C7377",
+                        "end": 45,
+                        "loincId": "LA14347-1,MTHU004262,LP16165-0",
+                        "meshId": "M0010965",
+                        "nciCode": "C561",
                         "negated": false,
-                        "preferredName": "Malignant neoplasm of lung",
-                        "semanticType": "neop",
-                        "snomedConceptId": "363358000",
+                        "preferredName": "ibuprofen",
+                        "rxNormId": "5640",
+                        "semanticType": "phsu",
+                        "snomedConceptId": "387207008,38268001",
                         "source": "umls",
                         "sourceVersion": "2020AA",
-                        "type": "umls.NeoplasticProcess",
-                        "vocabs": "MTH,LNC,CSP,MSH,HPO,OMIM,COSTAR,CHV,NCI_CTRP,MEDLINEPLUS,NCI,LCH_NW,AOD,SNOMEDCT_US,PDQ"
+                        "type": "umls.PharmacologicSubstance",
+                        "uid": 2,
+                        "vocabs": "MTH,LNC,CSP,MSH,MTHSPL,RXNORM,NCI_DCP,NCI_NCI-GLOSS,CHV,ATC,USP,NCI_CTRP,NCI_FDA,LCH_NW,NCI,AOD,USPMG,SNOMEDCT_US,PDQ,DRUGBANK,NCI_DTP,VANDF"
                     },
                     {
-                        "begin": 37,
-                        "coveredText": "smoke",
-                        "cui": "C0037366",
+                        "begin": 72,
+                        "coveredText": "family history",
+                        "cui": "C0241889",
                         "disambiguationData": {
                             "validity": "NO_DECISION"
                         },
-                        "end": 42,
-                        "meshId": "M0019984",
+                        "end": 86,
+                        "icd9Code": "V19.8",
+                        "loincId": "LA26428-5",
+                        "meshId": "M000616164",
+                        "nciCode": "C17726",
                         "negated": true,
-                        "preferredName": "Smoke",
-                        "semanticType": "hops",
-                        "snomedConceptId": "64197008",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.HazardousOrPoisonousSubstance",
-                        "vocabs": "LCH,MTH,CHV,MSH,LCH_NW,SNOMEDCT_US"
-                    },
-                    {
-                        "begin": 37,
-                        "coveredText": "smoke",
-                        "cui": "C0037369",
-                        "disambiguationData": {
-                            "comment": "marked VALID by clinical insight models.",
-                            "validity": "VALID"
-                        },
-                        "end": 42,
-                        "insightModelCandidates": [
-                            "ICTobacco"
-                        ],
-                        "insightModelData": {
-                            "tobacco": {
-                                "exposureScore": 0.006,
-                                "nonPatientScore": 0.0,
-                                "treatmentScore": 0.0,
-                                "usage": {
-                                    "discussedScore": 0.014,
-                                    "noneScore": 0.968,
-                                    "useScore": 0.018
-                                },
-                                "useStatus": {
-                                    "currentScore": 0.0,
-                                    "neverScore": 0.107,
-                                    "stoppedScore": 0.001
-                                }
-                            }
-                        },
-                        "loincId": "LA8928-9",
-                        "meshId": "M0019985",
-                        "modifiedBy": [
-                            {
-                                "ruleId": "eba6d581-ad29-4d73-8684-36fcd9aa1579",
-                                "source": "Substance Use Insight Derived Concepts",
-                                "sourceVersion": "v1.0"
-                            }
-                        ],
-                        "nciCode": "C154329",
-                        "negated": true,
-                        "preferredName": "Smoking",
-                        "semanticType": "inbe",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.IndividualBehavior",
-                        "uid": 6,
-                        "vocabs": "LCH,MTH,LNC,CHV,CSP,MSH,MEDLINEPLUS,LCH_NW,NCI,AOD,COSTAR,NCI_CPTAC"
-                    },
-                    {
-                        "begin": 37,
-                        "coveredText": "smoke",
-                        "cui": "C0439994",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 42,
-                        "nciCode": "C829",
-                        "negated": true,
-                        "preferredName": "Tobacco smoke",
-                        "semanticType": "hops",
-                        "snomedConceptId": "102407002",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.HazardousOrPoisonousSubstance",
-                        "vocabs": "MTH,CHV,NCI,AOD,SNOMEDCT_US"
-                    },
-                    {
-                        "begin": 37,
-                        "coveredText": "smoke",
-                        "cui": "C0453996",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 42,
-                        "meshId": "M0510199",
-                        "nciCode": "C17934",
-                        "negated": true,
-                        "preferredName": "Tobacco smoking behavior",
-                        "semanticType": "inbe",
-                        "snomedConceptId": "365981007",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.IndividualBehavior",
-                        "vocabs": "MTH,CHV,CSP,MSH,MEDLINEPLUS,NCI,SNOMEDCT_US,DXP"
-                    },
-                    {
-                        "begin": 37,
-                        "coveredText": "smoke",
-                        "cui": "C1881674",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 42,
-                        "nciCode": "C63003",
-                        "negated": true,
-                        "preferredName": "Medical Device Emits Smoke",
+                        "preferredName": "Family history",
                         "semanticType": "fndg",
+                        "snomedConceptId": "416471007,57177007",
                         "source": "umls",
                         "sourceVersion": "2020AA",
                         "type": "umls.Finding",
-                        "vocabs": "MTH,NCI_FDA,NCI"
+                        "vocabs": "LNC,MTH,CHV,CSP,MSH,MEDLINEPLUS,NCI,HPO,SNOMEDCT_US,DXP,NCI_NCI-GLOSS"
                     },
                     {
-                        "begin": 61,
-                        "coveredText": "chemotherapy",
-                        "cui": "C0013216",
+                        "begin": 88,
+                        "coveredText": "Possible",
+                        "cui": "C0332149",
                         "disambiguationData": {
                             "validity": "NO_DECISION"
                         },
-                        "end": 73,
+                        "end": 96,
+                        "loincId": "LA15097-1",
+                        "nciCode": "C82490",
+                        "negated": false,
+                        "preferredName": "Possible",
+                        "semanticType": "fndg",
+                        "snomedConceptId": "371930009",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.Finding",
+                        "vocabs": "LNC,MTH,CHV,NCI_FDA,NCI,SNOMEDCT_US"
+                    },
+                    {
+                        "begin": 97,
+                        "coveredText": "tuberculosis",
+                        "cui": "C0041296",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 109,
+                        "icd10Code": "A15.7,A16.9,A15.9",
+                        "icd9Code": "017.96,017.92,017.94,017.90",
                         "insightModelData": {
-                            "procedure": {
-                                "task": {
-                                    "clinicalAssessmentScore": 0.0,
-                                    "diagnosticScore": 0.0,
-                                    "labTestScore": 0.0,
-                                    "surgicalTaskScore": 0.0,
-                                    "therapeuticScore": 1.0
-                                },
-                                "type": {
-                                    "conditionManagementScore": 0.002,
-                                    "deviceScore": 0.0,
-                                    "materialScore": 0.0,
-                                    "medicationScore": 0.997,
-                                    "procedureScore": 0.001
-                                },
+                            "diagnosis": {
+                                "familyHistoryScore": 0.847,
+                                "suspectedScore": 0.845,
+                                "symptomScore": 0.0,
+                                "traumaScore": 0.0,
                                 "usage": {
-                                    "discussedScore": 0.998,
-                                    "explicitScore": 0.001,
-                                    "pendingScore": 0.001
+                                    "discussedScore": 0.997,
+                                    "explicitScore": 0.003,
+                                    "patientReportedScore": 0.0
                                 }
                             }
                         },
-                        "meshId": "M0006850",
-                        "nciCode": "C15986",
+                        "loincId": "MTHU020835,LA10513-2,LP28599-6",
+                        "meshId": "M0022106",
+                        "nciCode": "C3423",
                         "negated": false,
-                        "preferredName": "Pharmacotherapy",
-                        "semanticType": "topp",
-                        "snomedConceptId": "416608005",
+                        "preferredName": "Tuberculosis",
+                        "semanticType": "dsyn",
+                        "snomedConceptId": "56717001,371569005,373576009",
                         "source": "umls",
                         "sourceVersion": "2020AA",
-                        "type": "umls.TherapeuticOrPreventiveProcedure",
-                        "uid": 2,
-                        "vocabs": "NCI_NICHD,MTH,CHV,CSP,MSH,MEDLINEPLUS,NCI,AOD,SNOMEDCT_US,HL7V3.0,NCI_NCI-GLOSS,NCI_CPTAC"
-                    },
-                    {
-                        "begin": 61,
-                        "coveredText": "chemotherapy",
-                        "cui": "C0392920",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 73,
-                        "negated": false,
-                        "preferredName": "Chemotherapy Regimen",
-                        "semanticType": "topp",
-                        "snomedConceptId": "716872004",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.TherapeuticOrPreventiveProcedure",
-                        "vocabs": "MTH,CHV,CCS_10,CSP,IBMEXTENSION,CCS,SNOMEDCT_US"
-                    },
-                    {
-                        "begin": 61,
-                        "coveredText": "chemotherapy",
-                        "cui": "C3665472",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 73,
-                        "loincId": "LA6172-6,MTHU010425",
-                        "nciCode": "C15632",
-                        "negated": false,
-                        "preferredName": "Chemotherapy",
-                        "semanticType": "topp",
-                        "snomedConceptId": "367336001,363688001",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.TherapeuticOrPreventiveProcedure",
-                        "vocabs": "LNC,MTH,CSP,NCI_NCI-GLOSS,LCH,CHV,NCI_CDISC,CCS,NCI_CTRP,MEDLINEPLUS,LCH_NW,NCI,AOD,SNOMEDCT_US,PDQ,NCI_CPTAC"
-                    },
-                    {
-                        "begin": 87,
-                        "coveredText": "treatment",
-                        "cui": "C0087111",
-                        "disambiguationData": {
-                            "comment": "Clinical Insights: This concept was excluded for being either invalid or uninteresting by: normality. Clinical Insights: This concept was excluded for being either invalid or uninteresting by: procedure.",
-                            "validity": "INVALID"
-                        },
-                        "end": 96,
-                        "loincId": "MTHU021209,LP100632-1,LP267221-2,LP21090-3,LP267354-1,LP94823-9,MTHU021207",
-                        "meshId": "M0021296",
-                        "nciCode": "C49236",
-                        "negated": false,
-                        "preferredName": "Therapeutic procedure",
-                        "semanticType": "topp",
-                        "snomedConceptId": "277132007,276239002",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.TherapeuticOrPreventiveProcedure",
+                        "type": "umls.DiseaseOrSyndrome",
                         "uid": 3,
-                        "vocabs": "MTH,NCI_NICHD,LNC,NCI_NCI-HL7,CSP,MSH,NCI_CDISC-GLOSS,AOT,HL7V2.5,MTHMST,HL7V3.0,NCI_NCI-GLOSS,LCH,CHV,NCI_CTRP,NCI,LCH_NW,AOD,SNOMEDCT_US,PDQ"
+                        "vocabs": "LNC,NCI_NICHD,MTH,CSP,MSH,CST,COSTAR,NCI_NCI-GLOSS,LCH,CHV,CCSR_10,CCS,MEDLINEPLUS,LCH_NW,NCI,AOD,ICD9CM,SNOMEDCT_US,DXP,NCI_CPTAC"
                     },
                     {
-                        "begin": 87,
-                        "coveredText": "treatment",
-                        "cui": "C1533734",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 96,
-                        "loincId": "LA20296-2",
-                        "nciCode": "C25409",
-                        "negated": false,
-                        "preferredName": "Administration procedure",
-                        "semanticType": "topp",
-                        "snomedConceptId": "416118004",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.TherapeuticOrPreventiveProcedure",
-                        "vocabs": "MTH,LNC,NCI,SNOMEDCT_US,ICD10PCS,NCI_NCI-GLOSS"
-                    },
-                    {
-                        "begin": 87,
-                        "coveredText": "treatment",
-                        "cui": "C3887704",
-                        "disambiguationData": {
-                            "validity": "NO_DECISION"
-                        },
-                        "end": 96,
-                        "negated": false,
-                        "preferredName": "treatment - ActInformationManagementReason",
-                        "semanticType": "hlca",
-                        "source": "umls",
-                        "sourceVersion": "2020AA",
-                        "type": "umls.HealthCareActivity",
-                        "vocabs": "MTH,HL7V3.0"
-                    },
-                    {
-                        "begin": 12,
-                        "coveredText": "lung cancer",
-                        "cui": "C1306460",
+                        "begin": 13,
+                        "coveredText": "severe back pain",
+                        "cui": "C0238740",
                         "derivedFrom": [
                             {
                                 "uid": 4
@@ -501,81 +433,58 @@
                             "comment": "marked VALID by clinical insight models.",
                             "validity": "VALID"
                         },
-                        "end": 23,
-                        "icd10Code": "C34.9,C34.90",
-                        "icd9Code": "162.9",
+                        "end": 29,
                         "insightModelData": {
                             "diagnosis": {
                                 "familyHistoryScore": 0.0,
-                                "suspectedScore": 0.054,
-                                "symptomScore": 0.001,
+                                "suspectedScore": 0.001,
+                                "symptomScore": 0.744,
                                 "traumaScore": 0.0,
                                 "usage": {
-                                    "discussedScore": 0.031,
-                                    "explicitScore": 0.963,
-                                    "patientReportedScore": 0.006
+                                    "discussedScore": 0.0,
+                                    "explicitScore": 1.0,
+                                    "patientReportedScore": 0.0
                                 }
                             }
                         },
                         "negated": false,
-                        "preferredName": "Primary malignant neoplasm of lung",
-                        "ruleId": "33e6be29-a746-40f1-a012-952410bade6f",
-                        "snomedConceptId": "93880001",
+                        "preferredName": "severe back pain",
+                        "ruleId": "3cf38e29-77f0-47b3-9950-4a0292f64c93",
                         "source": "Clinical Insights - Derived Concepts",
                         "sourceVersion": "v1.0",
-                        "type": "ICDiagnosis"
+                        "type": "ICDiagnosis",
+                        "uid": 8
                     },
                     {
-                        "begin": 61,
-                        "coveredText": "chemotherapy",
-                        "cui": "C0013216",
+                        "begin": 36,
+                        "coveredText": "Ibuprofen",
+                        "cui": "C0020740",
                         "derivedFrom": [
                             {
                                 "uid": 2
                             }
                         ],
                         "disambiguationData": {
-                            "comment": "marked VALID by clinical insight models.",
-                            "validity": "VALID"
+                            "comment": "Clinical Insights: This concept was shorter than an overlapping concept.",
+                            "validity": "INVALID"
                         },
-                        "end": 73,
-                        "insightModelData": {
-                            "procedure": {
-                                "task": {
-                                    "clinicalAssessmentScore": 0.0,
-                                    "diagnosticScore": 0.0,
-                                    "labTestScore": 0.0,
-                                    "surgicalTaskScore": 0.0,
-                                    "therapeuticScore": 1.0
-                                },
-                                "type": {
-                                    "conditionManagementScore": 0.002,
-                                    "deviceScore": 0.0,
-                                    "materialScore": 0.0,
-                                    "medicationScore": 0.997,
-                                    "procedureScore": 0.001
-                                },
-                                "usage": {
-                                    "discussedScore": 0.998,
-                                    "explicitScore": 0.001,
-                                    "pendingScore": 0.001
-                                }
-                            }
-                        },
-                        "meshId": "M0006850",
-                        "nciCode": "C15986",
+                        "end": 45,
+                        "loincId": "LA14347-1,MTHU004262,LP16165-0",
+                        "meshId": "M0010965",
+                        "nciCode": "C561",
                         "negated": false,
-                        "preferredName": "Pharmacotherapy",
-                        "ruleId": "ea5cc506-c0ec-4063-a0dd-4b2b807f6011",
-                        "snomedConceptId": "416608005",
+                        "preferredName": "ibuprofen",
+                        "ruleId": "7861c024-ad1c-47e6-b40e-c90cb7b19e26",
+                        "rxNormId": "5640",
+                        "snomedConceptId": "387207008,38268001",
                         "source": "Clinical Insights - Derived Concepts",
                         "sourceVersion": "v1.0",
-                        "type": "ICProcedure"
+                        "type": "ICMedication"
                     },
                     {
-                        "begin": 61,
-                        "coveredText": "chemotherapy",
-                        "cui": "C0013216",
+                        "begin": 36,
+                        "coveredText": "Ibuprofen",
+                        "cui": "C0020740",
                         "derivedFrom": [
                             {
                                 "uid": 2
@@ -584,84 +493,96 @@
                         "disambiguationData": {
                             "validity": "NO_DECISION"
                         },
-                        "end": 73,
-                        "meshId": "M0006850",
-                        "nciCode": "C15986",
+                        "end": 45,
+                        "loincId": "LA14347-1,MTHU004262,LP16165-0",
+                        "meshId": "M0010965",
+                        "nciCode": "C561",
                         "negated": false,
-                        "preferredName": "Pharmacotherapy",
-                        "ruleId": "e83c28e0-c3e2-491e-9c4f-2922b702a06b",
-                        "snomedConceptId": "416608005",
+                        "preferredName": "ibuprofen",
+                        "ruleId": "d004df62-a65d-4136-aa32-161a43eb9506",
+                        "rxNormId": "5640",
+                        "snomedConceptId": "387207008,38268001",
                         "source": "Clinical Insights - Derived Concepts",
                         "sourceVersion": "v1.0",
                         "type": "ICNormality"
                     },
                     {
-                        "begin": 87,
-                        "coveredText": "treatment",
-                        "cui": "C0087111",
+                        "begin": 36,
+                        "coveredText": "Ibuprofen",
+                        "cui": "C0020740",
+                        "derivedFrom": [
+                            {
+                                "uid": 5
+                            }
+                        ],
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 45,
+                        "negated": false,
+                        "preferredName": "ibuprofen",
+                        "ruleId": "343e6158-2c30-4726-be71-33a570b28703",
+                        "source": "Clinical Insights - Derived Concepts",
+                        "sourceVersion": "v1.0",
+                        "type": "ICNormality"
+                    },
+                    {
+                        "begin": 97,
+                        "coveredText": "tuberculosis",
+                        "cui": "C0041296",
                         "derivedFrom": [
                             {
                                 "uid": 3
                             }
                         ],
                         "disambiguationData": {
-                            "comment": "Clinical Insights: This concept was excluded for being either invalid or uninteresting by: procedure.",
-                            "validity": "INVALID"
+                            "comment": "marked VALID by clinical insight models.",
+                            "validity": "VALID"
                         },
-                        "end": 96,
-                        "loincId": "MTHU021209,LP100632-1,LP267221-2,LP21090-3,LP267354-1,LP94823-9,MTHU021207",
-                        "meshId": "M0021296",
-                        "nciCode": "C49236",
-                        "negated": false,
-                        "preferredName": "Therapeutic procedure",
-                        "ruleId": "ea5cc506-c0ec-4063-a0dd-4b2b807f6011",
-                        "snomedConceptId": "277132007,276239002",
-                        "source": "Clinical Insights - Derived Concepts",
-                        "sourceVersion": "v1.0",
-                        "type": "ICProcedure"
-                    },
-                    {
-                        "begin": 87,
-                        "coveredText": "treatment",
-                        "cui": "C0087111",
-                        "derivedFrom": [
-                            {
-                                "uid": 3
+                        "end": 109,
+                        "icd10Code": "A15.7,A16.9,A15.9",
+                        "icd9Code": "017.96,017.92,017.94,017.90",
+                        "insightModelData": {
+                            "diagnosis": {
+                                "familyHistoryScore": 0.847,
+                                "suspectedScore": 0.845,
+                                "symptomScore": 0.0,
+                                "traumaScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.997,
+                                    "explicitScore": 0.003,
+                                    "patientReportedScore": 0.0
+                                }
                             }
-                        ],
-                        "disambiguationData": {
-                            "comment": "Clinical Insights: This concept was excluded for being either invalid or uninteresting by: normality.",
-                            "validity": "INVALID"
                         },
-                        "end": 96,
-                        "loincId": "MTHU021209,LP100632-1,LP267221-2,LP21090-3,LP267354-1,LP94823-9,MTHU021207",
-                        "meshId": "M0021296",
-                        "nciCode": "C49236",
+                        "loincId": "MTHU020835,LA10513-2,LP28599-6",
+                        "meshId": "M0022106",
+                        "nciCode": "C3423",
                         "negated": false,
-                        "preferredName": "Therapeutic procedure",
-                        "ruleId": "e83c28e0-c3e2-491e-9c4f-2922b702a06b",
-                        "snomedConceptId": "277132007,276239002",
+                        "preferredName": "Tuberculosis",
+                        "ruleId": "698f2b19-27b6-4dab-9150-7d7ef3b03a5c",
+                        "snomedConceptId": "56717001,371569005,373576009",
                         "source": "Clinical Insights - Derived Concepts",
                         "sourceVersion": "v1.0",
-                        "type": "ICNormality"
+                        "type": "ICDiagnosis"
                     }
                 ],
                 "negatedSpans": [
                     {
-                        "begin": 37,
-                        "coveredText": "smoke",
-                        "end": 42,
+                        "begin": 72,
+                        "coveredText": "family history",
+                        "end": 86,
                         "trigger": {
-                            "begin": 33,
-                            "coveredText": "not",
-                            "end": 36
+                            "begin": 64,
+                            "coveredText": "without",
+                            "end": 71
                         },
                         "type": "NegatedSpan"
                     }
                 ],
                 "spellCorrectedText": [
                     {
-                        "correctedText": "Patient has lung cancer, but did not smoke. She may consider chemotherapy as part of a treatment plan."
+                        "correctedText": "Patient with severe back pain, used Ibuprofen 800mg medication, without family history. Possible tuberculosis."
                     }
                 ]
             }

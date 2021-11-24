@@ -1,4 +1,5 @@
 import requests
+from googletrans import Translator
 from requests.auth import HTTPBasicAuth
 import json
 import time
@@ -11,9 +12,14 @@ def connection_general():
         'Accept': 'application/json',
         'Content-Type': 'text/plain'
     }
-    test_data = "Patient has lung cancer, but did not smoke. She may consider chemotherapy as part of a treatment plan."
+    test_data = "Paciente con dolor de espalda severo, usaba medicamento Ibuprofeno 800mg, sin historial familiar. Posible tuberculosis."
+    translator = Translator()
+    test_data_en = translator.translate(test_data, dest='en')
 
-    query_post = requests.post(url, headers=headers, auth=auth_data, data=test_data)
+    print("Data español: ",test_data)
+    print("Data Ingles:  ",test_data_en.text)
+
+    query_post = requests.post(url, headers=headers, auth=auth_data, data=test_data_en.text)
     #print(json.dumps(query_post.json(), sort_keys=True, indent=4))
     
     with open('result.json', 'w') as f:
