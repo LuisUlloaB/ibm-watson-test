@@ -1,0 +1,670 @@
+{
+    "unstructured": [
+        {
+            "data": {
+                "ProcedureInd": [
+                    {
+                        "begin": 61,
+                        "coveredText": "chemotherapy",
+                        "cui": "C3665472",
+                        "disambiguationData": {
+                            "validity": "VALID"
+                        },
+                        "end": 73,
+                        "insightModelData": {
+                            "procedure": {
+                                "task": {
+                                    "clinicalAssessmentScore": 0.0,
+                                    "diagnosticScore": 0.0,
+                                    "labTestScore": 0.0,
+                                    "surgicalTaskScore": 0.0,
+                                    "therapeuticScore": 1.0
+                                },
+                                "type": {
+                                    "conditionManagementScore": 0.002,
+                                    "deviceScore": 0.0,
+                                    "materialScore": 0.0,
+                                    "medicationScore": 0.997,
+                                    "procedureScore": 0.001
+                                },
+                                "usage": {
+                                    "discussedScore": 0.998,
+                                    "explicitScore": 0.001,
+                                    "pendingScore": 0.001
+                                }
+                            }
+                        },
+                        "negated": false,
+                        "procedureNormalizedName": "chemotherapy",
+                        "procedureSurfaceForm": "chemotherapy",
+                        "snomedConceptId": "367336001",
+                        "type": "aci.ProcedureInd"
+                    }
+                ],
+                "SymptomDiseaseInd": [
+                    {
+                        "begin": 12,
+                        "ccsCode": "19",
+                        "coveredText": "lung cancer",
+                        "cui": "C1306460",
+                        "disambiguationData": {
+                            "validity": "VALID"
+                        },
+                        "end": 23,
+                        "hccCode": "9",
+                        "icd10Code": "C34.90,C34.9",
+                        "icd9Code": "162.9",
+                        "insightModelData": {
+                            "diagnosis": {
+                                "familyHistoryScore": 0.0,
+                                "suspectedScore": 0.054,
+                                "symptomScore": 0.001,
+                                "traumaScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.031,
+                                    "explicitScore": 0.963,
+                                    "patientReportedScore": 0.006
+                                }
+                            }
+                        },
+                        "modality": "positive",
+                        "negated": false,
+                        "snomedConceptId": "93880001",
+                        "symptomDiseaseNormalizedName": "primary malignant neoplasm of lung",
+                        "symptomDiseaseSurfaceForm": "lung cancer",
+                        "type": "aci.SymptomDiseaseInd",
+                        "uid": 7
+                    }
+                ],
+                "attributeValues": [
+                    {
+                        "begin": 12,
+                        "ccsCode": "19",
+                        "concept": {
+                            "uid": 7
+                        },
+                        "coveredText": "lung cancer",
+                        "disambiguationData": {
+                            "validity": "VALID"
+                        },
+                        "end": 23,
+                        "hccCode": "9",
+                        "icd10Code": "C34.90,C34.9",
+                        "icd9Code": "162.9",
+                        "insightModelData": {
+                            "diagnosis": {
+                                "familyHistoryScore": 0.0,
+                                "suspectedScore": 0.054,
+                                "symptomScore": 0.001,
+                                "traumaScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.031,
+                                    "explicitScore": 0.963,
+                                    "patientReportedScore": 0.006
+                                }
+                            }
+                        },
+                        "name": "Diagnosis",
+                        "negated": false,
+                        "preferredName": "primary malignant neoplasm of lung",
+                        "snomedConceptId": "93880001",
+                        "source": "Clinical Insights - Attributes",
+                        "sourceVersion": "v1.0",
+                        "values": [
+                            {
+                                "value": "primary malignant neoplasm of lung"
+                            }
+                        ]
+                    },
+                    {
+                        "begin": 37,
+                        "concept": {
+                            "uid": 6
+                        },
+                        "coveredText": "smoke",
+                        "disambiguationData": {
+                            "comment": "marked VALID by clinical insight models.",
+                            "validity": "VALID"
+                        },
+                        "end": 42,
+                        "insightModelData": {
+                            "tobacco": {
+                                "exposureScore": 0.006,
+                                "nonPatientScore": 0.0,
+                                "treatmentScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.014,
+                                    "noneScore": 0.968,
+                                    "useScore": 0.018
+                                },
+                                "useStatus": {
+                                    "currentScore": 0.0,
+                                    "neverScore": 0.107,
+                                    "stoppedScore": 0.001
+                                }
+                            }
+                        },
+                        "loincId": "LA8928-9",
+                        "meshId": "M0019985",
+                        "name": "NoTobaccoUse",
+                        "nciCode": "C154329",
+                        "negated": true,
+                        "preferredName": "Smoking",
+                        "source": "Substance Use Insight Attributes",
+                        "sourceVersion": "v1.0",
+                        "values": [
+                            {
+                                "value": "none"
+                            }
+                        ]
+                    }
+                ],
+                "concepts": [
+                    {
+                        "begin": 12,
+                        "coveredText": "lung cancer",
+                        "cui": "C1306460",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 23,
+                        "icd10Code": "C34.9,C34.90",
+                        "icd9Code": "162.9",
+                        "insightModelData": {
+                            "diagnosis": {
+                                "familyHistoryScore": 0.0,
+                                "suspectedScore": 0.054,
+                                "symptomScore": 0.001,
+                                "traumaScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.031,
+                                    "explicitScore": 0.963,
+                                    "patientReportedScore": 0.006
+                                }
+                            }
+                        },
+                        "negated": false,
+                        "preferredName": "Primary malignant neoplasm of lung",
+                        "semanticType": "neop",
+                        "snomedConceptId": "93880001",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.NeoplasticProcess",
+                        "uid": 4,
+                        "vocabs": "MTH,SNOMEDCT_US"
+                    },
+                    {
+                        "begin": 12,
+                        "coveredText": "lung cancer",
+                        "cui": "C0684249",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 23,
+                        "nciCode": "C4878",
+                        "negated": false,
+                        "preferredName": "Carcinoma of lung",
+                        "semanticType": "neop",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.NeoplasticProcess",
+                        "vocabs": "MTH,CHV,NCI_CTRP,CST,NCI,OMIM,COSTAR,NCI_CTEP-SDC,PDQ,NCI_NCI-GLOSS,NCI_CPTAC"
+                    },
+                    {
+                        "begin": 12,
+                        "coveredText": "lung cancer",
+                        "cui": "C0242379",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 23,
+                        "icd10Code": "C34.9,C34.90",
+                        "icd9Code": "162.9,162.8",
+                        "loincId": "LA15687-9",
+                        "meshId": "M0012750",
+                        "nciCode": "C7377",
+                        "negated": false,
+                        "preferredName": "Malignant neoplasm of lung",
+                        "semanticType": "neop",
+                        "snomedConceptId": "363358000",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.NeoplasticProcess",
+                        "vocabs": "MTH,LNC,CSP,MSH,HPO,OMIM,COSTAR,CHV,NCI_CTRP,MEDLINEPLUS,NCI,LCH_NW,AOD,SNOMEDCT_US,PDQ"
+                    },
+                    {
+                        "begin": 37,
+                        "coveredText": "smoke",
+                        "cui": "C0037366",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 42,
+                        "meshId": "M0019984",
+                        "negated": true,
+                        "preferredName": "Smoke",
+                        "semanticType": "hops",
+                        "snomedConceptId": "64197008",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.HazardousOrPoisonousSubstance",
+                        "vocabs": "LCH,MTH,CHV,MSH,LCH_NW,SNOMEDCT_US"
+                    },
+                    {
+                        "begin": 37,
+                        "coveredText": "smoke",
+                        "cui": "C0037369",
+                        "disambiguationData": {
+                            "comment": "marked VALID by clinical insight models.",
+                            "validity": "VALID"
+                        },
+                        "end": 42,
+                        "insightModelCandidates": [
+                            "ICTobacco"
+                        ],
+                        "insightModelData": {
+                            "tobacco": {
+                                "exposureScore": 0.006,
+                                "nonPatientScore": 0.0,
+                                "treatmentScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.014,
+                                    "noneScore": 0.968,
+                                    "useScore": 0.018
+                                },
+                                "useStatus": {
+                                    "currentScore": 0.0,
+                                    "neverScore": 0.107,
+                                    "stoppedScore": 0.001
+                                }
+                            }
+                        },
+                        "loincId": "LA8928-9",
+                        "meshId": "M0019985",
+                        "modifiedBy": [
+                            {
+                                "ruleId": "eba6d581-ad29-4d73-8684-36fcd9aa1579",
+                                "source": "Substance Use Insight Derived Concepts",
+                                "sourceVersion": "v1.0"
+                            }
+                        ],
+                        "nciCode": "C154329",
+                        "negated": true,
+                        "preferredName": "Smoking",
+                        "semanticType": "inbe",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.IndividualBehavior",
+                        "uid": 6,
+                        "vocabs": "LCH,MTH,LNC,CHV,CSP,MSH,MEDLINEPLUS,LCH_NW,NCI,AOD,COSTAR,NCI_CPTAC"
+                    },
+                    {
+                        "begin": 37,
+                        "coveredText": "smoke",
+                        "cui": "C0439994",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 42,
+                        "nciCode": "C829",
+                        "negated": true,
+                        "preferredName": "Tobacco smoke",
+                        "semanticType": "hops",
+                        "snomedConceptId": "102407002",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.HazardousOrPoisonousSubstance",
+                        "vocabs": "MTH,CHV,NCI,AOD,SNOMEDCT_US"
+                    },
+                    {
+                        "begin": 37,
+                        "coveredText": "smoke",
+                        "cui": "C0453996",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 42,
+                        "meshId": "M0510199",
+                        "nciCode": "C17934",
+                        "negated": true,
+                        "preferredName": "Tobacco smoking behavior",
+                        "semanticType": "inbe",
+                        "snomedConceptId": "365981007",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.IndividualBehavior",
+                        "vocabs": "MTH,CHV,CSP,MSH,MEDLINEPLUS,NCI,SNOMEDCT_US,DXP"
+                    },
+                    {
+                        "begin": 37,
+                        "coveredText": "smoke",
+                        "cui": "C1881674",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 42,
+                        "nciCode": "C63003",
+                        "negated": true,
+                        "preferredName": "Medical Device Emits Smoke",
+                        "semanticType": "fndg",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.Finding",
+                        "vocabs": "MTH,NCI_FDA,NCI"
+                    },
+                    {
+                        "begin": 61,
+                        "coveredText": "chemotherapy",
+                        "cui": "C0013216",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 73,
+                        "insightModelData": {
+                            "procedure": {
+                                "task": {
+                                    "clinicalAssessmentScore": 0.0,
+                                    "diagnosticScore": 0.0,
+                                    "labTestScore": 0.0,
+                                    "surgicalTaskScore": 0.0,
+                                    "therapeuticScore": 1.0
+                                },
+                                "type": {
+                                    "conditionManagementScore": 0.002,
+                                    "deviceScore": 0.0,
+                                    "materialScore": 0.0,
+                                    "medicationScore": 0.997,
+                                    "procedureScore": 0.001
+                                },
+                                "usage": {
+                                    "discussedScore": 0.998,
+                                    "explicitScore": 0.001,
+                                    "pendingScore": 0.001
+                                }
+                            }
+                        },
+                        "meshId": "M0006850",
+                        "nciCode": "C15986",
+                        "negated": false,
+                        "preferredName": "Pharmacotherapy",
+                        "semanticType": "topp",
+                        "snomedConceptId": "416608005",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.TherapeuticOrPreventiveProcedure",
+                        "uid": 2,
+                        "vocabs": "NCI_NICHD,MTH,CHV,CSP,MSH,MEDLINEPLUS,NCI,AOD,SNOMEDCT_US,HL7V3.0,NCI_NCI-GLOSS,NCI_CPTAC"
+                    },
+                    {
+                        "begin": 61,
+                        "coveredText": "chemotherapy",
+                        "cui": "C0392920",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 73,
+                        "negated": false,
+                        "preferredName": "Chemotherapy Regimen",
+                        "semanticType": "topp",
+                        "snomedConceptId": "716872004",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.TherapeuticOrPreventiveProcedure",
+                        "vocabs": "MTH,CHV,CCS_10,CSP,IBMEXTENSION,CCS,SNOMEDCT_US"
+                    },
+                    {
+                        "begin": 61,
+                        "coveredText": "chemotherapy",
+                        "cui": "C3665472",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 73,
+                        "loincId": "LA6172-6,MTHU010425",
+                        "nciCode": "C15632",
+                        "negated": false,
+                        "preferredName": "Chemotherapy",
+                        "semanticType": "topp",
+                        "snomedConceptId": "367336001,363688001",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.TherapeuticOrPreventiveProcedure",
+                        "vocabs": "LNC,MTH,CSP,NCI_NCI-GLOSS,LCH,CHV,NCI_CDISC,CCS,NCI_CTRP,MEDLINEPLUS,LCH_NW,NCI,AOD,SNOMEDCT_US,PDQ,NCI_CPTAC"
+                    },
+                    {
+                        "begin": 87,
+                        "coveredText": "treatment",
+                        "cui": "C0087111",
+                        "disambiguationData": {
+                            "comment": "Clinical Insights: This concept was excluded for being either invalid or uninteresting by: normality. Clinical Insights: This concept was excluded for being either invalid or uninteresting by: procedure.",
+                            "validity": "INVALID"
+                        },
+                        "end": 96,
+                        "loincId": "MTHU021209,LP100632-1,LP267221-2,LP21090-3,LP267354-1,LP94823-9,MTHU021207",
+                        "meshId": "M0021296",
+                        "nciCode": "C49236",
+                        "negated": false,
+                        "preferredName": "Therapeutic procedure",
+                        "semanticType": "topp",
+                        "snomedConceptId": "277132007,276239002",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.TherapeuticOrPreventiveProcedure",
+                        "uid": 3,
+                        "vocabs": "MTH,NCI_NICHD,LNC,NCI_NCI-HL7,CSP,MSH,NCI_CDISC-GLOSS,AOT,HL7V2.5,MTHMST,HL7V3.0,NCI_NCI-GLOSS,LCH,CHV,NCI_CTRP,NCI,LCH_NW,AOD,SNOMEDCT_US,PDQ"
+                    },
+                    {
+                        "begin": 87,
+                        "coveredText": "treatment",
+                        "cui": "C1533734",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 96,
+                        "loincId": "LA20296-2",
+                        "nciCode": "C25409",
+                        "negated": false,
+                        "preferredName": "Administration procedure",
+                        "semanticType": "topp",
+                        "snomedConceptId": "416118004",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.TherapeuticOrPreventiveProcedure",
+                        "vocabs": "MTH,LNC,NCI,SNOMEDCT_US,ICD10PCS,NCI_NCI-GLOSS"
+                    },
+                    {
+                        "begin": 87,
+                        "coveredText": "treatment",
+                        "cui": "C3887704",
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 96,
+                        "negated": false,
+                        "preferredName": "treatment - ActInformationManagementReason",
+                        "semanticType": "hlca",
+                        "source": "umls",
+                        "sourceVersion": "2020AA",
+                        "type": "umls.HealthCareActivity",
+                        "vocabs": "MTH,HL7V3.0"
+                    },
+                    {
+                        "begin": 12,
+                        "coveredText": "lung cancer",
+                        "cui": "C1306460",
+                        "derivedFrom": [
+                            {
+                                "uid": 4
+                            }
+                        ],
+                        "disambiguationData": {
+                            "comment": "marked VALID by clinical insight models.",
+                            "validity": "VALID"
+                        },
+                        "end": 23,
+                        "icd10Code": "C34.9,C34.90",
+                        "icd9Code": "162.9",
+                        "insightModelData": {
+                            "diagnosis": {
+                                "familyHistoryScore": 0.0,
+                                "suspectedScore": 0.054,
+                                "symptomScore": 0.001,
+                                "traumaScore": 0.0,
+                                "usage": {
+                                    "discussedScore": 0.031,
+                                    "explicitScore": 0.963,
+                                    "patientReportedScore": 0.006
+                                }
+                            }
+                        },
+                        "negated": false,
+                        "preferredName": "Primary malignant neoplasm of lung",
+                        "ruleId": "33e6be29-a746-40f1-a012-952410bade6f",
+                        "snomedConceptId": "93880001",
+                        "source": "Clinical Insights - Derived Concepts",
+                        "sourceVersion": "v1.0",
+                        "type": "ICDiagnosis"
+                    },
+                    {
+                        "begin": 61,
+                        "coveredText": "chemotherapy",
+                        "cui": "C0013216",
+                        "derivedFrom": [
+                            {
+                                "uid": 2
+                            }
+                        ],
+                        "disambiguationData": {
+                            "comment": "marked VALID by clinical insight models.",
+                            "validity": "VALID"
+                        },
+                        "end": 73,
+                        "insightModelData": {
+                            "procedure": {
+                                "task": {
+                                    "clinicalAssessmentScore": 0.0,
+                                    "diagnosticScore": 0.0,
+                                    "labTestScore": 0.0,
+                                    "surgicalTaskScore": 0.0,
+                                    "therapeuticScore": 1.0
+                                },
+                                "type": {
+                                    "conditionManagementScore": 0.002,
+                                    "deviceScore": 0.0,
+                                    "materialScore": 0.0,
+                                    "medicationScore": 0.997,
+                                    "procedureScore": 0.001
+                                },
+                                "usage": {
+                                    "discussedScore": 0.998,
+                                    "explicitScore": 0.001,
+                                    "pendingScore": 0.001
+                                }
+                            }
+                        },
+                        "meshId": "M0006850",
+                        "nciCode": "C15986",
+                        "negated": false,
+                        "preferredName": "Pharmacotherapy",
+                        "ruleId": "ea5cc506-c0ec-4063-a0dd-4b2b807f6011",
+                        "snomedConceptId": "416608005",
+                        "source": "Clinical Insights - Derived Concepts",
+                        "sourceVersion": "v1.0",
+                        "type": "ICProcedure"
+                    },
+                    {
+                        "begin": 61,
+                        "coveredText": "chemotherapy",
+                        "cui": "C0013216",
+                        "derivedFrom": [
+                            {
+                                "uid": 2
+                            }
+                        ],
+                        "disambiguationData": {
+                            "validity": "NO_DECISION"
+                        },
+                        "end": 73,
+                        "meshId": "M0006850",
+                        "nciCode": "C15986",
+                        "negated": false,
+                        "preferredName": "Pharmacotherapy",
+                        "ruleId": "e83c28e0-c3e2-491e-9c4f-2922b702a06b",
+                        "snomedConceptId": "416608005",
+                        "source": "Clinical Insights - Derived Concepts",
+                        "sourceVersion": "v1.0",
+                        "type": "ICNormality"
+                    },
+                    {
+                        "begin": 87,
+                        "coveredText": "treatment",
+                        "cui": "C0087111",
+                        "derivedFrom": [
+                            {
+                                "uid": 3
+                            }
+                        ],
+                        "disambiguationData": {
+                            "comment": "Clinical Insights: This concept was excluded for being either invalid or uninteresting by: procedure.",
+                            "validity": "INVALID"
+                        },
+                        "end": 96,
+                        "loincId": "MTHU021209,LP100632-1,LP267221-2,LP21090-3,LP267354-1,LP94823-9,MTHU021207",
+                        "meshId": "M0021296",
+                        "nciCode": "C49236",
+                        "negated": false,
+                        "preferredName": "Therapeutic procedure",
+                        "ruleId": "ea5cc506-c0ec-4063-a0dd-4b2b807f6011",
+                        "snomedConceptId": "277132007,276239002",
+                        "source": "Clinical Insights - Derived Concepts",
+                        "sourceVersion": "v1.0",
+                        "type": "ICProcedure"
+                    },
+                    {
+                        "begin": 87,
+                        "coveredText": "treatment",
+                        "cui": "C0087111",
+                        "derivedFrom": [
+                            {
+                                "uid": 3
+                            }
+                        ],
+                        "disambiguationData": {
+                            "comment": "Clinical Insights: This concept was excluded for being either invalid or uninteresting by: normality.",
+                            "validity": "INVALID"
+                        },
+                        "end": 96,
+                        "loincId": "MTHU021209,LP100632-1,LP267221-2,LP21090-3,LP267354-1,LP94823-9,MTHU021207",
+                        "meshId": "M0021296",
+                        "nciCode": "C49236",
+                        "negated": false,
+                        "preferredName": "Therapeutic procedure",
+                        "ruleId": "e83c28e0-c3e2-491e-9c4f-2922b702a06b",
+                        "snomedConceptId": "277132007,276239002",
+                        "source": "Clinical Insights - Derived Concepts",
+                        "sourceVersion": "v1.0",
+                        "type": "ICNormality"
+                    }
+                ],
+                "negatedSpans": [
+                    {
+                        "begin": 37,
+                        "coveredText": "smoke",
+                        "end": 42,
+                        "trigger": {
+                            "begin": 33,
+                            "coveredText": "not",
+                            "end": 36
+                        },
+                        "type": "NegatedSpan"
+                    }
+                ],
+                "spellCorrectedText": [
+                    {
+                        "correctedText": "Patient has lung cancer, but did not smoke. She may consider chemotherapy as part of a treatment plan."
+                    }
+                ]
+            }
+        }
+    ]
+}

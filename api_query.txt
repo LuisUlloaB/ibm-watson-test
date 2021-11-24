@@ -1,0 +1,6 @@
+curl -X POST 
+-u "apikey:{apikey}" 
+--header "Content-Type: text/plain" 
+--header "Accept: application/json" 
+-d "Patient has lung cancer, but did not smoke. She may consider chemotherapy as part of a treatment plan." 
+"{url}/v1/analyze/wh_acd.ibm_clinical_insights_v1.0_standard_flow?version=2020-03-31"
